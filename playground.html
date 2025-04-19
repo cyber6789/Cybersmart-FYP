@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cybersmart - Playground</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+<link href="assets/img/logo_cyber.jpeg" rel="icon">
+  <link href="assets/img/logo_cyber.jpeg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+<style>
+.quiz-container {
+      background: #ffffff; padding: 20px; border-radius: 12px;
+      max-width: 700px; margin: auto; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      border: 4px dashed #4dd0e1;
+    }
+    h2 {
+      color: #00796b;
+      text-align: center;
+    }
+    .question { margin-bottom: 20px; }
+    .options { margin-top: 10px; }
+    .options label { display: block; margin-bottom: 8px; cursor: pointer; }
+    #result {
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: #2e7d32;
+      margin-top: 30px;
+    }
+    button {
+      background: #5fcf80; color: white;
+      padding: 12px 24px; font-size: 16px;
+      border: none; border-radius: 8px;
+      cursor: pointer; display: block; margin: 20px auto;
+    }
+    button:hover {
+      background: #00838f;
+    }
+    .quiz-container img { width: 100px; display: block; margin: 10px auto; }
+</style>
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/img/logo_cyber.jpeg" alt="">
+        <h1 class="sitename">Cyber Smart</h1>
+      </a>
+
+     <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home<br></a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+           <li><a href="playground.html" class="active">Playground</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="resources.html">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Playground<br></h1>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Playground<br></li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+
+    <!-- Counts Section -->
+    <section id="counts" class="section counts light-background">
+
+     <div class="quiz-container">
+    <h2>🔒 Cyber Smart Quiz! 🔒</h2>
+    <img src="assets/img/cyber_security.jpeg" alt="Cyber Safety Icon">
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Which of these is a Strong Password?</p>
+        <div class="options">
+          <label><input type="radio" name="q1" value="12345678" /> 12345678</label>
+          <label><input type="radio" name="q1" value="yourname123" /> yourname123</label>
+          <label><input type="radio" name="q1" value="P@ssw0rd!98" /> P@ssw0rd!98</label>
+        </div>
+      </div>
+      <div class="question">
+        <p>2. How often should you change your passwords?</p>
+        <div class="options">
+          <label><input type="radio" name="q2" value="Never, just remember them once" /> Never, just remember them once</label>
+          <label><input type="radio" name="q2" value="Only when you forget it" /> Only when you forget it</label>
+          <label><input type="radio" name="q2" value="Regularly, to stay safe" /> Regularly, to stay safe</label>
+        </div>
+      </div>
+      <div class="question">
+        <p>3. What should you do if someone online asks for your address?</p>
+        <div class="options">
+          <label><input type="radio" name="q3" value="Tell them if they seem nice" /> Tell them if they seem nice</label>
+          <label><input type="radio" name="q3" value="Do not tell them and report it to an adult" /> Do not tell them and report it to an adult</label>
+          <label><input type="radio" name="q3" value="Ask them for theirs first" /> Ask them for theirs first</label>
+        </div>
+      </div>
+      <button type="button" onclick="checkAnswers()">🎉 Submit Quiz 🎉</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+    </section><!-- /Counts Section -->
+
+ <section id="courses" class="courses section">
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">CYBERSAFE VIDEO LIBRARY</h2>
+    <div class="row">
+      <!-- First Video -->
+      <div class="col-md-6 mb-4">
+        <div class="course-item">
+          <iframe width="100%" height="315"
+            src="https://www.youtube.com/embed/AVgGprhCvtE"
+            title="Cybersecurity for Kid"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <p class="mt-2">Stay Safe Online: Defend Against Phishing Attack</p>
+        </div>
+      </div>
+  
+      <!-- Second Video -->
+      <div class="col-md-6 mb-4">
+        <div class="course-item">
+          <iframe width="100%" height="315"
+            src="https://www.youtube.com/embed/ygI87KvRtEQ"
+            title="How to be Safe on Social Media"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <p class="mt-2">How to be Safe on Social Media</p>
+        </div>
+      </div>
+    </div>
+  </div>
+                
+          		
+          </div> <!-- End Course Item-->
+
+        
+		  
+		  <!-- End Course Item-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Courses Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-6 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Cybersmart</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p class="mt-3"><strong>Phone:</strong> <span>+44 7778889991</span></p>
+            <p><strong>Email:</strong> <span>vinit.banker2022@my.ntu.ac.uk</span></p>
+          </div>
+         
+        </div>
+
+        <div class="col-lg-6 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Cybersmart</strong> <span>All Rights Reserved</span></p>
+      
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+<script>
+    function checkAnswers() {
+      const answers = {
+        q1: 'P@ssw0rd!98',
+        q2: 'Regularly, to stay safe',
+        q3: 'Do not tell them and report it to an adult'
+      };
+      let score = 0;
+      let total = Object.keys(answers).length;
+
+      for (let key in answers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === answers[key]) {
+          score++;
+        }
+      }
+
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `🌟 You scored <strong>${score}</strong> out of <strong>${total}</strong>! <br>` +
+        (score === total ? '🎉 Awesome job! You know how to stay safe online!' : '👍 Good try! Keep learning and you’ll be Cyber Smart in no time!');
+    }
+  </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
